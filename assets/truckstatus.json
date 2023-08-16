@@ -1,0 +1,55 @@
+{
+    "data": [
+      {
+        "driver_name": "Rajesh Kumar",
+        "truck_number": "TN-1234",
+        "status": "active"
+      },
+      {
+        "driver_name": "Anjali Sharma",
+        "truck_number": "MH-5678",
+        "status": "inactive"
+      },
+      {
+        "driver_name": "Amit Singh",
+        "truck_number": "KA-9876",
+        "status": "active"
+      },
+      {
+        "driver_name": "Priya Patel",
+        "truck_number": "GJ-5432",
+        "status": "inactive"
+      },
+      {
+        "driver_name": "Sanjay Verma",
+        "truck_number": "UP-7654",
+        "status": "active"
+      },
+      {
+        "driver_name": "Kavita Reddy",
+        "truck_number": "AP-2345",
+        "status": "inactive"
+      },
+      {
+        "driver_name": "Arun Khanna",
+        "truck_number": "DL-8765",
+        "status": "active"
+      },
+      {
+        "driver_name": "Meera Nair",
+        "truck_number": "KL-3210",
+        "status": "inactive"
+      },
+      {
+        "driver_name": "Vikram Singhania",
+        "truck_number": "RJ-6543",
+        "status": "active"
+      },
+      {
+        "driver_name": "Pooja Choudhary",
+        "truck_number": "MP-4321",
+        "status": "inactive"
+      }
+    ]
+  }
+  
