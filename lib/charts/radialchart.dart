@@ -21,7 +21,7 @@ class _RadialChartWidgetState extends State<RadialChartWidget> {
   late List<Driver> drivers = [];
   late num activeDriverCount;
   late num inactiveDriverCount;
-  late  List<_RadialData> chartData; // Declare the chartData list here
+  List<_RadialData> chartData=[]; // Declare the chartData list here
 
   @override
   void initState() {
@@ -62,13 +62,21 @@ Future<void> loadDriverData() async {
         title: Text(''),
       ),
       body: Container(
-        height: 300,
+        // width:MediaQuery.of(context).size.width *1,
+        height: MediaQuery.of(context).size.height *.35,
         margin: EdgeInsets.all(20),
         child: SfCircularChart(
-          // ... (rest of your chart configuration)
+           backgroundColor: Colors.black,
+            palette: [ const Color.fromARGB(255, 8, 132, 234),const Color.fromARGB(255, 101, 192, 234),],
+            title: ChartTitle(text: 'Active Vehicles',),
+            legend: Legend(isVisible: true),
+     // Radial graph implementation
           series: [
             RadialBarSeries<_RadialData, String>(
-              // ... (series configuration)
+               radius: '80%',
+                innerRadius: '70%',
+                gap: '8%',
+                cornerStyle: CornerStyle.bothCurve,
               dataSource: chartData,
               xValueMapper: (_RadialData data, _) => data.xData,
               yValueMapper: (_RadialData data, _) => data.yData,
